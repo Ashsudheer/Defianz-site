@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    /* -webkit-backface-visibility: visible; */
+    backface-visibility: visible;
+}
+
+/* .topic{
+    padding: 25px;
+}
+
+.topic-head{
+    margin-bottom: 20px;
+} */
+
+div.carousel-item img{
+    width:100%;
+    height:auto;
+}
+
+img.sponsorImg {
+    display:block; 
+    width: 100%; 
+    height:auto;
+}
