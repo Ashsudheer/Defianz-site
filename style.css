@@ -36,3 +36,9 @@ bottom:25px;
 left:50%;
 transform: translate(-50%,-50%);
 }
+.rule2 hr{
+    border-top:2px solid #b4b4b4;
+    width:85%;
+    margin-top: .7rem;
+    margin-bottom: .1rem;
+}
