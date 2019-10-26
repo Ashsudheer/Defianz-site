@@ -23,12 +23,21 @@
     margin-bottom: 3.3rem;
 }
 
+
 .rule hr{
     border-top: 2px solid #b4b4b4 ;
     width: 55%;
     margin-top: .7rem ;
     margin-bottom: 3.3rem;
 }
+
+.rule2 hr{
+    border-top: 2px solid #b4b4b4 ;
+    width: 85%;
+    margin-top: .7rem ;
+    margin-bottom: .1rem;
+}
+
 
 div.carousel-item img{
     width:100%;
