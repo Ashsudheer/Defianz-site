@@ -26,3 +26,13 @@ img.sponsorImg {
     width: 100%; 
     height:auto;
 }
+.row.padding{
+    background-color:rgb(231, 230, 230);
+    
+}
+.bottom-centre{
+position:absolute;
+bottom:25px;
+left:50%;
+transform: translate(-50%,-50%);
+}
