@@ -16,6 +16,29 @@
     margin-bottom: 20px;
 } */
 
+.container-fluid-padding hr{
+    border-top: 2px solid #b4b4b4 ;
+    width: 80%;
+    margin-top: .7rem ;
+    margin-bottom: 3.3rem;
+}
+
+
+.rule hr{
+    border-top: 2px solid #b4b4b4 ;
+    width: 55%;
+    margin-top: .7rem ;
+    margin-bottom: 3.3rem;
+}
+
+.rule2 hr{
+    border-top: 2px solid #b4b4b4 ;
+    width: 85%;
+    margin-top: .7rem ;
+    margin-bottom: .1rem;
+}
+
+
 div.carousel-item img{
     width:100%;
     height:auto;
@@ -26,14 +49,105 @@ img.sponsorImg {
     width: 100%; 
     height:auto;
 }
-.row.padding{
-    background-color:rgb(231, 230, 230);
+
+
+
+
+
+/*fooeter*/
+
+footer {
+    background: white;;
+    color: gray;
+    font-size: 13px;
+    text-align: center;
+    height:250px;
+    
+     }
+  footer li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+  
+    
+    
+    list-style-type: none;
+    color: rgb(204, 21, 21);
+    font-size: 20px;
+  }
+  footer ul.footer{
+    padding:0 0 0 0;
+  }
+
+  footer div{
+    color: rgb(77, 73, 73);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  
+    
+  }
+  footer a {
+    color:rgb(204, 21, 21);
+    text-decoration:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+    
+     
+    
+  
+  div.img{
+    
+    margin-top:10px 0 10px 0; 
+  }
+  nav li{
+    display:inline-block;
+    padding:20px;
     
 }
 
-.rule2 hr{
-    border-top:2px solid #b4b4b4;
-    width:85%;
-    margin-top: .7rem;
-    margin-bottom: .1rem;
+
+/*links*/
+
+.fa {
+    
+    font-size: 30px;
+    
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+    
+    
+    
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
 }
+
+.fa-facebook {
+  background:white;
+  color:black;
+}
+
+
+  
+  
+
+.fa-linkedin {
+  background: white;
+  color: black;
+}
+
+.fa-youtube {
+  background:white;
+  color: black;
+}
+
+.fa-instagram {
+  background:white;
+  color: black;
+}  
+    
