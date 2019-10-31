@@ -16,12 +16,13 @@
     margin-bottom: 20px;
 } */
 
-.container-fluid-padding hr{
-    border-top: 2px solid #b4b4b4 ;
+.rule3 hr{
+  border-top: 2px solid #b4b4b4 ;
     width: 80%;
     margin-top: .7rem ;
     margin-bottom: 3.3rem;
 }
+
 
 
 .rule hr{
