@@ -1,160 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+    <script>
+    var main = function () {
+    $('.push-bar').on('click', function(event){
+      if (!isClicked){
+        event.preventDefault();
+        $('.arrow').trigger('click');
+        isClicked = true;
+      }
+    });
+  
+    $('.arrow').css({
+      'animation': 'bounce 2s infinite'
+    });
+    $('.arrow').on("mouseenter", function(){
+        $('.arrow').css({
+                'animation': '',
+                'transform': 'rotate(180deg)',
+                'background-color': 'black'
+           });
+    });
+     $('.arrow').on("mouseleave", function(){
+        if (!isClicked){
+            $('.arrow').css({
+                    'transform': 'rotate(0deg)',
+                    'background-color': 'black'
+               });
+        }
+    });
+
+    var isClicked = false;
+
+    $('.arrow').on("click", function(){
+        if (!isClicked){
+            isClicked = true;
+            $('.arrow').css({
+                'transform': 'rotate(180deg)',
+                'background-color': 'black',
+           });
+
+            $('.bar-cont').animate({
+                top: "-15px"
+            }, 300);
+            $('.main-cont').animate({
+                top: "0px"
+            }, 300);
+            // $('.news-block').css({'border': '0'});
+            // $('.underlay').slideDown(1000);
+
+        }
+        else if (isClicked){
+            isClicked = false;
+            $('.arrow').css({
+                'transform': 'rotate(0deg)',       'background-color': 'black'
+           });
+
+            $('.bar-cont').animate({
+                top: "-215px"
+            }, 300);
+            $('.main-cont').animate({
+                top: "-215px"
+            }, 300);
+        }
+    console.log('isClicked= '+isClicked);
+    });
+  
+    $('.card').on('mouseenter', function() {
+      $(this).find('.card-text').slideDown(300);
+    });
+  
+    $('.card').on('mouseleave', function(event) {
+       $(this).find('.card-text').css({
+         'display': 'none'
+       });
+     });
+};
+
+$(document).ready(main);
+
+    
+    </script>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Defianz Racing</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	
 	<link href="../style.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="…">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
-        <a class="navbar-brand" href="home.html">
-            <img src="../img/DR-White.png" height="30" width="auto" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="fs.html">FS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Our Team
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="about.html">About Us</a>
-                        <a class="dropdown-item" href="team.html">Team Structure</a>
-                        <a class="dropdown-item" href="media.html">Media</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cars.html">Cars</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sponsors.html">Sponsors</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+	
+        
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
+		<a class="navbar-brand" href="home.html">
+			<img src="../img/DR-White.png" height="50" width="auto" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a style="font-size: 20px;"class="nav-link" href="fs.html">FS</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a style="font-size: 20px;"class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Our Team
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="about.html">About Us</a>
+						<a class="dropdown-item" href="team.html">Team Structure</a>
+						<a class="dropdown-item" href="media.html">Media</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a style="font-size: 20px;"class="nav-link" href="cars.html">Cars</a>
+				</li>
+				<li class="nav-item">
+					<a style="font-size: 20px;"class="nav-link" href="sponsors.html">Sponsors</a>
+				</li>
+				<li class="nav-item">
+					<a style="font-size: 20px;" class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- <div class="col-12"> -->
+	<div class="carousel-caption" style="padding: 175px;">
+	<h1 class="display-4"><strong>TEAM STRUCTURE</strong></h1>
+	<div class="rule2"><hr></div>
+<p><h2 class="display-5">subdivisions in the team</h2></p>
+	</div>
+	<!-- </div> -->
 
 	<div class="container-fluid" style="margin:0px ;padding:0px;">
-        <img src="../img/background.png" style="width:100%;height:auto;">
-        <div class="carousel-caption" style="padding:147px;"><h1 class="display-3">Departments</h1>
-        <div class="rule2"><hr></div></div>
+		
+		<img src="../img/header teampage.jpg" style="width:100%;height:auto;">
+
     </div>
-<div>
-        <div class="d-inline-flex mx-auto "  style="flex-direction:row;">
+    
+    <div class="d-inline-flex mx-auto "  style="flex-direction:row;">
 
-                <figure>
-                        <img src="../img/background.png" class="d-block mx-auto rounded-circle m-2 ml-10 col-lg-7"  width="300" height="300" >
-                        <figcaption class="figure-caption"><p class="text-center">A</p></figcaption>
-                </figure>
-                <figure>
-                        <img src="../img/background.png" class="d-block mx-auto rounded-circle m-2 mr-10 col-lg-7"  width="300" height="300">
-                        <figcaption class="figure-caption text-center">A</figcaption>
-                </figure>
+            <figure>
+                    <img src="../img/background.png" class="d-block mx-auto m-2 mr-10 col-lg-5"  width="200" height="300" >
+                    <figcaption class="figure-caption"><p class="text-center">A</p></figcaption>
+            </figure>
+            <figure>
+                    <img src="../img/background.png" class="d-block mx-auto m-2 mr-10 col-lg-5"  width="300" height="300">
+                    <figcaption class="figure-caption text-center">A</figcaption>
+            </figure>
+            </div>
+
+
+            <div class="container-fluid main-cont">
+                    <div class="row news-row">
+                        <div class="container-fluid col-md-12 col-sm-6 justify-content-center news-block">
+                            <div class="card-group">
+                              <div class="underlay">
+                                <div class="card">
+                                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/wLMJQPH.png')"></div>
+                                    <div class="card-block" >
+                                    <h5 class="card-title" style="font-family: 'Anton', sans-serif">Powertrain<hr></h5>
+                                    <p class="card-text" >       Powertrain system is essentially the heart of the vehicle starting from the engine
+                                            and ending at the wheels. The department essentially deals with the
+                                            transmission of power taking power from the motor and delivering it to the
+                                            wheels with the help of gears , shafts etc. <a href="#"><u>Read More...</u></a></p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="underlay">
+                               <div class="card">
+                                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/tT6Bxay.png')"></div>
+                                    <div class="card-block" >
+                                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Vehicle Dynamics<hr></h5>
+                                      <p class="card-text" >Vehicle dynamics deals with the suspension geometry along with steering
+                                            geometry and the wheel assembly of the car .The primary objective of the
+                                            department is to design and develop a highly tuneable and robust system and
+                                            track tune it. <a href="#"><u>Read More...</u></a></p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="underlay">
+                                  <div class="card">
+                                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/n6b2rib.png')"></div>
+                                    <div class="card-block" >
+                                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Aerodynamics<hr></h5>
+                                      <p class="card-text" > Aerodynamics deals with designing of a front wing , rear wing , diffuser, nose and sidepods alongside
+                                            of the car.<a href="#"><u>Read More...</u></a></p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="underlay">
+                                  <div class="card">
+                                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/ssMsuUO.png')"></div>
+                                    <div class="card-block" >
+                                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Chassis<hr></h5>
+                                      <p class="card-text" >The objective of the department is to provide a design in order to make the lightest
+                                            possible rule-compliant chassis while maximizing torsional rigidity and achieving a
+                                            compact yet ergonomic structure. <a href="#"><u>Read More...</u></a></p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="underlay">
+                                  <div class="card">
+                                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/yAFDnZ1.png')"></div>
+                                    <div class="card-block" >
+                                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Electronics and Software<hr></h5>
+                                      <p class="card-text" >The primary objective of the department is to facilitate the fine-tuning of the car’s
+                                            setup by providing real-time track data and develop an interactive driver modelling
+                                            and training platform. <a href="#"><u>Read More...</u></a></p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="underlay">
+                                  <div class="card">
+                                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/5rgwfW6.png')"></div>
+                                    <div class="card-block" >
+                                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Management<hr></h5>
+                                      <p class="card-text" >This department primarily deals with the handling of sponsorships ,administration,logistics and financial management of the team. <a href="#"><u>Read More...</u></a></p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    <div class="container padding">
-        <div class="row padding">
+                <!------------------------>
+                <!--=======Scripts======-->
+                <script src="jquery-3.1.1.min.js"></script>
+                <script name="toggle-grid" type="text/javascript">
+                $(document).ready(function(){
+                  $(document).on("keypress", function(event) {
+                    // If 'alt + g' keys are pressed:
+                    if (event.which === 169){
+                        $('#toggle-grid').toggle();
+                     }
+                  });
                 
-                <span class="border border-dark p-1 m-4">
-                        <div class="col-xs-12 col-lg-6">
-                                
-                                <div class="card mx-auto d-block ml-2" style="width:450px ">
-                                        <img class="card-img-top" src="../img/DR-White.png" alt="TDR Captain" style="width:100%">
-                                        <div class="card-body">
-                                          <h4 class="card-title">John Doe</h4>
-                                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                          <a href="#" class="btn btn-primary">More Details</a>
-                                          </div>
-                                </div>
-                                </div>
-                            </span>
-                    
-                            <span class="border border-dark p-1 m-4">
-                                    <div class="col-xs-12 col-lg-6">
-                                            
-                                            <div class="card mx-auto d-block ml-2" style="width:450px">    
-                                                    <img class="card-img-top" src="../img/DR-White.png" alt="TDR Captain" style="width:100%">
-                                                    <div class="card-body">
-                                                      <h4 class="card-title">John Doe</h4>
-                                                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                                      <a href="#" class="btn btn-primary">More Details</a>
-                                                      </div>
-                                            </div>
-                                        </div>
-                                        </span>
-                                    
-                                        
-                       
-                <span class="border border-dark p-1 m-4">
-                        <div class="col-xs-12 col-lg-6">
-                                
-                                <div class="card mx-auto d-block ml-2" style="width:450px ">
-                                        <img class="card-img-top" src="../img/DR-White.png" alt="TDR Captain" style="width:100%">
-                                        <div class="card-body">
-                                          <h4 class="card-title">John Doe</h4>
-                                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                          <a href="#" class="btn btn-primary">More Details</a>
-                                          </div>
-                                </div>
-                                </div>
-                            </span>
-                    
-                            <span class="border border-dark p-1 m-4">
-                                    <div class="col-xs-12 col-lg-6">
-                                            
-                                            <div class="card mx-auto d-block ml-2" style="width:450px">    
-                                                    <img class="card-img-top" src="../img/DR-White.png" alt="TDR Captain" style="width:100%">
-                                                    <div class="card-body">
-                                                      <h4 class="card-title">John Doe</h4>
-                                                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                                      <a href="#" class="btn btn-primary">More Details</a>
-                                                      </div>
-                                            </div>
-                                        </div>
-                                        </span>
+                  $('#toggle-grid').on("click"
+                  , function() {
+                      $('.pixel-grid').toggle();
+                      $('#toggle-grid').toggleClass('orange');
+                    });
+                });
+                </script>
 
-                                        
-                <span class="border border-dark p-1 m-4">
-                        <div class="col-xs-12 col-lg-6">
-                                
-                                <div class="card mx-auto d-block ml-2" style="width:450px ">
-                                        <img class="card-img-top" src="../img/DR-White.png" alt="TDR Captain" style="width:100%">
-                                        <div class="card-body">
-                                          <h4 class="card-title">John Doe</h4>
-                                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                          <a href="#" class="btn btn-primary">More Details</a>
-                                          </div>
-                                </div>
-                                </div>
-                            </span>
-                    
-                            <span class="border border-dark p-1 m-4">
-                                    <div class="col-xs-12 col-lg-6">
-                                            
-                                            <div class="card mx-auto d-block ml-2" style="width:450px">    
-                                                    <img class="card-img-top" src="../img/DR-White.png" alt="TDR Captain" style="width:100%">
-                                                    <div class="card-body">
-                                                      <h4 class="card-title">John Doe</h4>
-                                                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                                      <a href="#" class="btn btn-primary">More Details</a>
-                                                      </div>
-                                            </div>
-                                        </div>
-                                        </span>
-                                                
-                                                                                
+
+
+
 
 </body>
 </html>
+            
