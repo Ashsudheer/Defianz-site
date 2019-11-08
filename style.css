@@ -45,6 +45,7 @@ nav ul a{
     width: 80%;
     margin-top: .7rem ;
     margin-bottom: 3.3rem;
+    margin-left: 10%;
 }
 
 
@@ -54,11 +55,12 @@ nav ul a{
     width: 55%;
     margin-top: 1.7rem ;
     margin-bottom: 3.3rem;
+    margin-left: 22.5%;
 }
 
 .rule2 hr{
     border-top: 2px solid #b4b4b4 ;
-    width: 85%;
+    width: 100%;
     margin-top: .7rem ;
     margin-bottom: .1rem;
 }
@@ -68,6 +70,7 @@ nav ul a{
     width:55%;
     margin-top: .7rem;
     margin-bottom: 3.3rem;
+    margin-left: 22.5%;
 }
 
 
