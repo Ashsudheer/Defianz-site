@@ -83,14 +83,6 @@ nav ul a:hover {
     transform: translateY(-50%);
 }
 
-.rule3 hr {
-    border-top: 2px solid #b4b4b4;
-    width: 80%;
-    margin-top: .7rem;
-    margin-bottom: 3.3rem;
-    margin-left: 10%;
-}
-
 
 
 .rule hr {
@@ -113,6 +105,14 @@ nav ul a:hover {
     width: 55%;
     margin-top: .7rem;
     margin-bottom: 3.3rem;
+    margin-left: 22.5%;
+}
+
+.rule3 hr {
+    border-top: 2px solid #b4b4b4;
+    width: 55%;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
     margin-left: 22.5%;
 }
 
@@ -225,6 +225,10 @@ nav li {
   * Does not work properly if "in" is added after "collapse".
   *******************************/
 
+.panel-group{
+    padding-top: 30px;
+}
+
 .panel-group .panel {
     border-radius: 0;
     box-shadow: none;
@@ -263,7 +267,7 @@ nav li {
 
 
 .demo {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
 }
 
