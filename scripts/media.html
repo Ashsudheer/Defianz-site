@@ -10,7 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	
-	<link href="../style.css" rel="stylesheet">
+	
 </head>
 <body>
 	<style>
@@ -20,6 +20,208 @@
     background: linear-gradient(to right, #E8CBC0, #636FA4);
     min-height: 100vh;
     }
+	.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    /* -webkit-backface-visibility: visible; */
+    backface-visibility: visible;
+}
+
+
+.rule3 hr{
+  border-top: 2px solid #b4b4b4 ;
+    width: 80%;
+    margin-top: .7rem ;
+    margin-bottom: 3.3rem;
+}
+
+
+.rule hr{
+    border-top: 2px solid #b4b4b4 ;
+    width: 55%;
+    margin-top: 1.7rem ;
+    margin-bottom: 3.3rem;
+}
+
+.rule2 hr{
+    border-top: 2px solid #b4b4b4 ;
+    width: 85%;
+    margin-top: .7rem ;
+    margin-bottom: .1rem;
+}
+
+.rule1 hr{
+    border-top: 2px solid #b4b4b4;
+    width:55%;
+    margin-top: .7rem;
+    margin-bottom: 3.3rem;
+}
+div.carousel-item img{
+    width:100%;
+    height:auto;
+}
+
+img.sponsorImg {
+    display:block; 
+    width: 100%; 
+    height:auto;
+}
+
+footer {
+    background: white;;
+    color: gray;
+    font-size: 13px;
+    text-align: center;
+    height:250px;
+     }
+  footer li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+
+
+
+    list-style-type: none;
+    color: rgb(204, 21, 21);
+    font-size: 20px;
+  }
+  footer ul.footer{
+    padding:0 0 0 0;
+  }
+
+  footer div{
+    color: rgb(77, 73, 73);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+
+
+  }
+  footer a {
+    color:rgb(204, 21, 21);
+    text-decoration:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0;
+	margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  div.img{
+
+    margin-top:10px 0 10px 0; 
+  }
+  nav li{
+    display:inline-block;
+    padding:20px;
+}
+nav.navbar {
+  /* height: 70px; */
+  background-color: rgb(2, 23, 29);
+}
+nav img{
+  height:26px;
+  width: auto;
+}
+nav ul a{
+  color: white;
+  /* font-weight:bold; */
+  font-size: 18px;
+}
+
+nav ul a:hover{
+  color: #66FCF1;
+}
+
+
+/*links*/
+
+.fa {
+
+    font-size: 30px;
+
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+
+
+
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:white;
+  color:black;
+}
+
+.fa-linkedin {
+  background: white;
+  color:black;
+}
+.fa-instagram {
+    background:white;
+    color:black;
+  }
+  
+  .fa-youtube{
+    background: white;
+    color:black;
+  }
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.text-gray {
+    color: #999;
+}
+
     </style>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
 		<a class="navbar-brand" href="home.html">
