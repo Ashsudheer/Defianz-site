@@ -2,6 +2,10 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /* background: rgb(26, 52, 77);
+    background: -webkit-linear-gradient(to right,rgb(26, 52, 77), rgb(0, 0, 0));
+    background: linear-gradient(to right,rgb(26, 52, 77), rgb(0, 0, 0));
+    min-height: 100vh; */
 }
 
 /* --------------
@@ -64,6 +68,12 @@ nav li {
 /*----------
     Containers 
 ---------------*/
+/* .container{
+    color: lavender;
+}
+.container-fluid{
+    color:gray;
+} */
 .container.padding {
     padding: 25px 0px;
 }
@@ -566,4 +576,10 @@ li.timeline-item::before {
 }
 .text-gray {
     color: #999;
+}
+.timeline-div{
+    margin:40px;
+}
+.timeline-item{
+    margin-top: 20px;
 }
