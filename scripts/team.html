@@ -28,15 +28,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-  <link href="../style.css" rel="stylesheet">
+  <script src="../js/index.js"></script>
+  <link href="../style2.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="icon" type="image/png" href="…">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -225,21 +224,6 @@
   <!------------------------>
   <!--=======Scripts======-->
   <script src="jquery-3.1.1.min.js"></script>
-  <script name="toggle-grid" type="text/javascript">
-    $(document).ready(function () {
-      $(document).on("keypress", function (event) {
-        // If 'alt + g' keys are pressed:
-        if (event.which === 169) {
-          $('#toggle-grid').toggle();
-        }
-      });
-
-      $('#toggle-grid').on("click", function () {
-        $('.pixel-grid').toggle();
-        $('#toggle-grid').toggleClass('orange');
-      });
-    });
-  </script>
 
   <div class="rule3">
     <hr>

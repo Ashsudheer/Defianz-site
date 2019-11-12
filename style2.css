@@ -4,10 +4,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Navigation-bar */
+/* --------------
+    Navigation-bar 
+----------------*/
 
-nav.navbar {
+/* nav.navbar {
     background-color: rgb(2, 23, 29);
+} */
+.fixed-top.scrolled {
+    background-color: rgb(2, 23, 29) !important;
+    transition: background-color 200ms linear;
 }
 nav img {
     height: 26px;
@@ -27,7 +33,9 @@ nav li {
 }
 
 
-/* Title image and Caption */
+/* ---------------
+    Title image and Caption 
+-----------------------*/
 
 .title-image {
     position: relative;
@@ -53,12 +61,16 @@ nav li {
     font-size: 2.5vw;
 }
 
-/* Containers */
+/*----------
+    Containers 
+---------------*/
 .container.padding {
     padding: 25px 0px;
 }
 
-/* Carousel */
+/*----------
+    Carousels 
+---------------*/
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -84,7 +96,9 @@ nav li {
 }
 
 
-/* Horizontal Rules */
+/*----------
+    Horizontal Rules
+---------------*/
 .rule hr {
     border-top: 2px solid #b4b4b4;
     width: 55%;
@@ -114,14 +128,18 @@ nav li {
 }
 
 
-/* Sponsor Images */
+/*----------
+    Sponsor Images
+---------------*/
 img.sponsorImg {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Footer */
+/*----------
+    Footer
+---------------*/
 footer {
     background: white;
     ;
@@ -157,7 +175,9 @@ div.img {
     margin-top: 10px 0 10px 0;
 }
 
-/*links*/
+/*--------
+    links
+----------*/
 .fa {
     font-size: 30px;
     width: 50px;
@@ -186,7 +206,9 @@ div.img {
 }
 
 
-/* Panel-group(team page) */
+/* ----------
+    Panel-group(team page) 
+---------------------*/
 .panel-group{
     padding-top: 30px;
 }
@@ -218,13 +240,17 @@ div.img {
     border-top-color: #EEEEEE;
 }
 
-/* container for team page */
+/* 
+    container for team page 
+*/
 .demo {
     padding-top: 30px;
     padding-bottom: 60px;
 }
 
-/* General */
+/* 
+General 
+*/
 * {
     padding: 0;
     margin: 0;
@@ -420,7 +446,9 @@ a {
 }
 
 
-/* Animation for Cards */
+/*----------------
+    Animation for Cards 
+-------------------*/
 @-webkit-keyframes blockAppear {
     0% {
         opacity: 0;
