@@ -3,8 +3,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     /* background: rgb(26, 52, 77);
-    background: -webkit-linear-gradient(to right,rgb(26, 52, 77), rgb(0, 0, 0));
-    background: linear-gradient(to right,rgb(26, 52, 77), rgb(0, 0, 0));
+    background: -webkit-linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
+    background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
     min-height: 100vh; */
 }
 
@@ -69,14 +69,21 @@ nav li {
     Containers 
 ---------------*/
 /* .container{
-    color: lavender;
+    color: white;
 }
 .container-fluid{
-    color:gray;
-} */
+    color: white;
+}
 .container.padding {
     padding: 25px 0px;
 }
+.jumbotron{
+    background: rgb(26, 52, 77);
+    background: -webkit-linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
+    background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
+    min-height: 100vh;
+    color:white;
+} */
 
 /*----------
     Carousels 
@@ -249,17 +256,17 @@ div.img {
     border-top-color: #EEEEEE;
 }
 
-/* 
+/* -----------------------
     container for team page 
-*/
+--------------------------*/
 .demo {
     padding-top: 30px;
     padding-bottom: 60px;
 }
 
-/* 
+/* -----------
 General 
-*/
+--------------*/
 * {
     padding: 0;
     margin: 0;
@@ -275,22 +282,6 @@ a {
     cursor: pointer;
     opacity: 0.95;
 }
-/*a:hover{
-  opacity: 1;
-  color: black;
-  } */
-/* body{
-    background-color: transparent;
-    background: url('https://i.imgur.com/ApQKtQZ.jpeg') fixed no-repeat;
-    background-size: cover;
-    max-height: 300rem;
-    border: 15px solid transparent !important;
-    -o-border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
-       border-image: -webkit-gradient(linear,left top, right bottom,from(rgba(255, 255, 255, 0.75)),color-stop(0%, rgba(245, 245, 245, 0.75)),color-stop(16.6%, rgba(245, 245, 245, 0.75)),color-stop(37.8%, rgb(245, 245, 245)),color-stop(48.8%, rgb(245, 245, 245)),color-stop(53.1%, rgb(254, 254, 254)),color-stop(79.4%, rgba(245, 245, 245, 0.75)),color-stop(84.3%, rgba(245, 245, 245, 0.75))) !important;
-       border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
-    border-image-slice: 1 !important;
-  } */
-
 
 @-webkit-keyframes bounce {
     0%,
