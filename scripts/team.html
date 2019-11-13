@@ -5,81 +5,7 @@
 
 
   <script>
-    function toggleIcon(e) {
-      $(e.target)
-        .prev(".panel-heading")
-        .find(".more-less")
-        .toggleClass("glyphicon-plus glyphicon-minus");
-    }
-    $(".panel-group").on("hidden.bs.collapse", toggleIcon);
-    $(".panel-group").on("shown.bs.collapse", toggleIcon);
-
-
-
     var main = function () {
-      $('.push-bar').on('click', function (event) {
-        if (!isClicked) {
-          event.preventDefault();
-          $('.arrow').trigger('click');
-          isClicked = true;
-        }
-      });
-
-      $('.arrow').css({
-        'animation': 'bounce 2s infinite'
-      });
-      $('.arrow').on("mouseenter", function () {
-        $('.arrow').css({
-          'animation': '',
-          'transform': 'rotate(180deg)',
-          'background-color': 'black'
-        });
-      });
-      $('.arrow').on("mouseleave", function () {
-        if (!isClicked) {
-          $('.arrow').css({
-            'transform': 'rotate(0deg)',
-            'background-color': 'black'
-          });
-        }
-      });
-
-      var isClicked = false;
-
-      $('.arrow').on("click", function () {
-        if (!isClicked) {
-          isClicked = true;
-          $('.arrow').css({
-            'transform': 'rotate(180deg)',
-            'background-color': 'black',
-          });
-
-          $('.bar-cont').animate({
-            top: "-15px"
-          }, 300);
-          $('.main-cont').animate({
-            top: "0px"
-          }, 300);
-          // $('.news-block').css({'border': '0'});
-          // $('.underlay').slideDown(1000);
-
-        } else if (isClicked) {
-          isClicked = false;
-          $('.arrow').css({
-            'transform': 'rotate(0deg)',
-            'background-color': 'black'
-          });
-
-          $('.bar-cont').animate({
-            top: "-215px"
-          }, 300);
-          $('.main-cont').animate({
-            top: "-215px"
-          }, 300);
-        }
-        console.log('isClicked= ' + isClicked);
-      });
-
       $('.card').on('mouseenter', function () {
         $(this).find('.card-text').slideDown(300);
       });
@@ -95,27 +21,26 @@
   </script>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Defianz Racing</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-  <link href="../style.css" rel="stylesheet">
+  <script src="../js/index.js"></script>
+  <link href="../style2.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="icon" type="image/png" href="…">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-md fixed-top">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand" href="home.html">
       <img src="../img/DR-White.png" alt="">
     </a>
@@ -144,9 +69,9 @@
         <li class="nav-item">
           <a class="nav-link py-0" href="sponsors.html">Sponsors</a>
         </li>
-        <li class="nav-item">
+				<button type="button" class="btn btn-outline-secondary my-2">
           <a class="nav-link py-0" href="contact.html">Contact Us</a>
-        </li>
+        </button>
       </ul>
     </div>
   </nav>
@@ -299,21 +224,6 @@
   <!------------------------>
   <!--=======Scripts======-->
   <script src="jquery-3.1.1.min.js"></script>
-  <script name="toggle-grid" type="text/javascript">
-    $(document).ready(function () {
-      $(document).on("keypress", function (event) {
-        // If 'alt + g' keys are pressed:
-        if (event.which === 169) {
-          $('#toggle-grid').toggle();
-        }
-      });
-
-      $('#toggle-grid').on("click", function () {
-        $('.pixel-grid').toggle();
-        $('#toggle-grid').toggleClass('orange');
-      });
-    });
-  </script>
 
   <div class="rule3">
     <hr>
