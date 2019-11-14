@@ -1,226 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Defianz Racing</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<link href="../style.css" rel="stylesheet">
-
+	<script src="../js/index.js"></script>
+	<link href="../style2.css" rel="stylesheet">
 </head>
+
 <body>
 	<style>
 		body {
-    background: white;
-    background: -webkit-linear-gradient(to right,#E8CBC0,#636FA4);
-    background: linear-gradient(to right,#E8CBC0, #636FA4);
-    min-height: 100vh;
-    }
-	
-
-
-.rule3 hr{
-  border-top: 2px solid #b4b4b4 ;
-    width: 80%;
-    margin-top: .7rem ;
-    margin-bottom: 3.3rem;
-}
-
-
-.rule hr{
-    border-top: 2px solid #b4b4b4 ;
-    width: 55%;
-    margin-top: 1.7rem ;
-    margin-bottom: 3.3rem;
-}
-
-.rule2 hr{
-    border-top: 2px solid #b4b4b4 ;
-    width: 100%;
-    margin-top: .7rem ;
-    margin-bottom: .1rem;
-}
-
-.rule1 hr{
-    border-top: 2px solid #b4b4b4;
-    width:55%;
-    margin-top: .7rem;
-    margin-bottom: 3.3rem;
-}
-div.carousel-item img{
-    width:100%;
-    height:auto;
-}
-
-img.sponsorImg {
-    display:block; 
-    width: 100%; 
-    height:auto;
-}
-
-footer {
-    background: white;;
-    color: gray;
-    font-size: 13px;
-    text-align: center;
-	height:=300px;
-     }
-  footer li{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: inline-block;
-
-
-
-    list-style-type: none;
-    color: rgb(204, 21, 21);
-    font-size: 20px;
-  }
-  footer ul.footer{
-    padding:0 0 0 0;
-  }
-
-  footer div{
-    color: rgb(77, 73, 73);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: center;
-
-
-  }
-  footer a {
-    color:rgb(204, 21, 21);
-    text-decoration:none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 0;
-	margin-bottom: 0;
-    font-size: 20px;
-  }
-
-  div.img{
-
-    margin-top:10px 0 10px 0; 
-  }
-  nav li{
-    display:inline-block;
-    padding:20px;
-}
-nav.navbar {
-  /* height: 70px; */
-  background-color: rgb(2, 23, 29);
-}
-nav img{
-  height:26px;
-  width: auto;
-}
-nav ul a{
-  color: white;
-  /* font-weight:bold; */
-  font-size: 18px;
-}
-
-nav ul a:hover{
-  color: #66FCF1;
-}
-
-
-/*links*/
-
-.fa {
-
-    font-size: 30px;
-
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px 2px;
-
-
-
-  }
-
-  .fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background:white;
-  color:black;
-}
-
-.fa-linkedin {
-  background: white;
-  color:black;
-}
-.fa-instagram {
-    background:white;
-    color:black;
-  }
-  
-  .fa-youtube{
-    background: white;
-    color:black;
-  }
-
-/* Timeline holder */
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-    padding-left: 1.5rem;
-    
-}
-
- /* Timeline vertical line */
-ul.timeline:before {
-    content: ' ';
-    background: #fff;
-    display: inline-block;
-    position: absolute;
-    left: 16px;
-    width: 4px;
-    height: 100%;
-    z-index: 400;
-    border-radius: 1rem;
-    background: rgb(10, 9, 9);
-}
-
-li.timeline-item {
-    margin: 20px 0;
-    
-}
-
-/* Timeline item arrow */
-.timeline-arrow {
-    border-top: 0.5rem solid transparent;
-    border-right: 0.5rem solid #fff;
-    border-bottom: 0.5rem solid transparent;
-    display: block;
-    position: absolute;
-    left: 2rem;
-}
-
-/* Timeline item circle marker */
-li.timeline-item::before {
-    content: ' ';
-    
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    left: 11px;
-    width: 14px;
-    height: 14px;
-    z-index: 400;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.295);
-}
-.text-gray {
-    color: #999;
-}
-
-    </style>
-	<nav class="navbar navbar-expand-md fixed-top" >
+			background: rgb(26, 52, 77);
+			background: -webkit-linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
+			background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
+			min-height: 100vh;
+		}
+	</style>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<a class="navbar-brand" href="home.html">
 			<img src="../img/DR-White.png" alt="">
 		</a>
@@ -233,7 +36,8 @@ li.timeline-item::before {
 					<a class="nav-link py-0" href="fs.html">FS</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Our Team
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -248,120 +52,165 @@ li.timeline-item::before {
 				<li class="nav-item">
 					<a class="nav-link py-0" href="sponsors.html">Sponsors</a>
 				</li>
-				<li class="nav-item">
+				<button type="button" class="btn btn-outline-secondary my-2">
 					<a class="nav-link py-0" href="contact.html">Contact Us</a>
-				</li>
+				</button>
 			</ul>
 		</div>
 	</nav>
-	
-	<div class="container-fluid" style="margin:0px ;padding:0px;">
-        <img src="../img/bck.jpg"  style="width:100%;height:auto; opacity:90%; box-shadow: rgba(0, 0, 0, 0.5)">
-        <div class="carousel-caption" style="padding:175px;">
-            <h1 class="display-3" style="color: rgb(0, 0, 0); " ><strong>MEDIA</strong></h1>
-            <div class="rule2"><hr></div>
+
+	<div class="container-fluid title-image" style="margin:0px ;padding:0px;">
+		<img src="../img/mediab.JPG">
+		<div class="centered">
+			<h1 class="display-4"><strong>Media</strong></h1>
+			<div class="rule2">
+				<hr>
+			</div>
+			<p>
+				<h2 class="display-5">Caption</h2>
+			</p>
 		</div>
+	</div>
+
+	<div class="container-fluid timeline-div">
 		<div class="row">
-            <div class="col-lg-7 mx-auto">
-                
-                <!-- Timeline -->
-                <ul class="timeline">
-						<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-								<div class="timeline-arrow"></div>
-								<h2 class="h5 mb-0">Title of section 1</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>28 May, 2017</span>
-								<div class="embed-responsive embed-responsive-16by9">
-										<iframe class="embed-responsive-item" src="https://www.wishberry.in/campaign/team-defianz-racing" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									
-									</div>
-							</li>
-							<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-									<div class="timeline-arrow"></div>
-									<h2 class="h5 mb-0">Title of section 2</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 December, 2016</span>
-									<div class="embed-responsive embed-responsive-16by9">
-											<iframe class="embed-responsive-item" src="https://whataftercollege.com/interviews/my-story/team-defianz-racing/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-										
-										</div>
-								</li>
-								<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-										<div class="timeline-arrow"></div>
-										<h2 class="h5 mb-0">Title of section 3</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>8 August, 2015</span>
-										<div class="embed-responsive embed-responsive-16by9">
-												<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/A4pvSNYLfmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-											
-											</div>
-									</li>
-									<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-											<div class="timeline-arrow"></div>
-											<h2 class="h5 mb-0">Title of section 4</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>28 September, 2010</span>
-											<div class="embed-responsive embed-responsive-16by9">
-													<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/0sAcKx71UnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-												
-												</div>
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                      <div class="timeline-arrow"></div>
-                      <h2 class="h5 mb-0">Title of section 8</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>28 September, 2010</span>
-                      <div class="embed-responsive embed-responsive-16by9">
-                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9o6VoqKcG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                        </div>
-                    </li>
-                            
-                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                                <div class="timeline-arrow"></div>
-                                <h2 class="h5 mb-0">Title of section 9</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>28 September, 2010</span>
-                                <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UtRiFETnO7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      
-                      </div>
-                            </li>
-						<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-								<div class="timeline-arrow"></div>
-								<h2 class="h5 mb-0">Title of section 5</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 October, 2008</span>
-								<div class="embed-responsive embed-responsive-16by9">
-										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qYp_0wo0oWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									
-									</div>
-							</li>
-						<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-								<div class="timeline-arrow"></div>
-								<h2 class="h5 mb-0">Title of section 6</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>12 July, 2003</span>
-								<div class="embed-responsive embed-responsive-16by9">
-										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTHZt4JlIog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									
-									</div>
-							</li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-							<div class="timeline-arrow"></div>
-							<h2 class="h5 mb-0">Title of section 7</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>11 July, 2003</span>
-							<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h0AXUS2mEXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								
-								</div>
-						</li>
-                </ul><!-- End -->
+			<div class="col-lg-7 mx-auto">
 
-            </div>
-        </div>
-    
+				<!-- Timeline -->
+				<ul class="timeline">
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 1</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item"
+								src="https://www.wishberry.in/campaign/team-defianz-racing" frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
 
+						</div>
+					</li>
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 2</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item"
+								src="https://whataftercollege.com/interviews/my-story/team-defianz-racing/"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</li>
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 3</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qYp_0wo0oWk"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</li>
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 4</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A4pvSNYLfmU"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</li>
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 5</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0sAcKx71UnY"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</li>
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 6</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTHZt4JlIog"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</li>
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 7</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h0AXUS2mEXc"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</li>
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 8</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9o6VoqKcG0"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</li>
+
+					<li class="timeline-item bg-white rounded ml-4 p-4 shadow">
+						<div class="timeline-arrow"></div>
+						<h2 class="h5 mb-0">Title of section 9</h2><span class="small text-gray"><i
+								class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UtRiFETnO7U"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</li>
+				</ul><!-- End -->
+
+			</div>
+		</div>
+	</div>
 	<footer>
 		<ul class="footer">
 			<li class="nav-item">
 				<a style="font-size: 20px;" class="nav-link" href="fs.html">FS</a>
 			</li>
 			<li class="nav-item dropdown">
-				<a style="font-size: 20px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a style="font-size: 20px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Our Team
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="about.html" >About Us</a>
+					<a class="dropdown-item" href="about.html">About Us</a>
 					<a class="dropdown-item" href="team.html">Team Structure</a>
 					<a class="dropdown-item" href="media.html">Media</a>
 				</div>
 			</li>
 			<li class="nav-item" style="padding:0 0 0 0">
-				<a style="font-size: 20px;"class="nav-link" href="cars.html">Cars</a>
+				<a style="font-size: 20px;" class="nav-link" href="cars.html">Cars</a>
 			</li>
 			<li class="nav-item">
 				<a style="font-size: 20px;" class="nav-link" href="sponsors.html">Sponsors</a>
@@ -371,24 +220,28 @@ li.timeline-item::before {
 			</li>
 		</ul>
 
-		<div  class="img"><img style="height:100px; width:150px;" src="../img/drlogo.jpg"></div>
+		<div class="img"><img style="height:100px; width:150px;" src="../img/drlogo.jpg"></div>
 
 
-          <a href="https://www.facebook.com/teamdefianzracing/?ref=br_rs" class="fa fa-facebook"></a>
-          
-          <a href="https://www.linkedin.com/company/defianzracing/" class="fa fa-linkedin"></a>
-        <a href="https://www.youtube.com/channel/UCEC1PN-1uYcdD9ysQ6s-piw" class="fa fa-youtube"></a>
-        <a href="https://instagram.com/defianz_racing?igshid=wm4rhij0umcr" class="fa fa-instagram"></a>
-        
+		<a href="https://www.facebook.com/teamdefianzracing/?ref=br_rs" class="fa fa-facebook"></a>
 
-          
-       
-		<div ><h3 style="font-size: 20px;">Email us at teamdefianz@dtu.ac.in<br/>Copyright Team Defianz Racing 2019</h3></div>
-						
-     
-     </footer>
-    
+		<a href="https://www.linkedin.com/company/defianzracing/" class="fa fa-linkedin"></a>
+		<a href="https://www.youtube.com/channel/UCEC1PN-1uYcdD9ysQ6s-piw" class="fa fa-youtube"></a>
+		<a href="https://instagram.com/defianz_racing?igshid=wm4rhij0umcr" class="fa fa-instagram"></a>
+
+
+
+
+		<div>
+			<h3 style="font-size: 20px;">Email us at teamdefianz@dtu.ac.in<br />Copyright Team Defianz Racing 2019
+			</h3>
+		</div>
+
+
+	</footer>
+
 </body>
+
 </html>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
