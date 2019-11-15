@@ -56,8 +56,9 @@ nav li {
     color: white;
 }
 .title-image img {
-    width: 100%;
-    height: auto;
+    width:100vw;
+    height:100vh;
+    object-fit: cover;
 }
 .title-image .display-4,.title-image .display-5{
     color:white;
@@ -107,8 +108,9 @@ nav li {
     backface-visibility: visible;
 }
 .carousel-item img {
-    width: 100%;
-    height: auto;
+    width:100vw;
+    height:100vh;
+    object-fit: cover;
 }
 .carousel-caption {
     position: absolute;
