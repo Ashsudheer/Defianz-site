@@ -2,10 +2,10 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* background: rgb(26, 52, 77);
+    background: rgb(26, 52, 77);
     background: -webkit-linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
     background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
-    min-height: 100vh; */
+    min-height: 100vh;
 }
 
 /* --------------
@@ -59,6 +59,9 @@ nav li {
     width: 100%;
     height: auto;
 }
+.title-image .display-4,.title-image .display-5{
+    color:white;
+}
 .centered {
     position: absolute;
     top: 50%;
@@ -77,22 +80,21 @@ nav li {
 /*----------
     Containers 
 ---------------*/
-/* .container{
-    color: white;
+.container{
+    color: rgb(121, 121, 121);
 }
 .container-fluid{
-    color: white;
+    color: rgb(121, 121, 121);
 }
 .container.padding {
     padding: 25px 0px;
 }
 .jumbotron{
-    background: rgb(26, 52, 77);
+    /* background: rgb(26, 52, 77); */
     background: -webkit-linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
     background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
-    min-height: 100vh;
     color:white;
-} */
+}
 
 /*----------
     Carousels 
@@ -167,7 +169,8 @@ img.sponsorImg {
     Footer
 ---------------*/
 footer {
-    background: rgb(255, 255, 255);;
+    background: -webkit-linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
+    background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
     color: gray;
     font-size: 13px;
     text-align: center;
@@ -195,7 +198,6 @@ footer a {
     margin-top: 0;
     font-size: 20px;
 }
-
 div.img {
     margin-top: 10px 0 10px 0;
 }
@@ -214,19 +216,19 @@ div.img {
     opacity: 0.7;
 }
 .fa-facebook {
-    background: white;
+    /* background: white; */
     color: black;
 }
 .fa-linkedin {
-    background: white;
+    /* background: white; */
     color: black;
 }
 .fa-youtube {
-    background: white;
+    /* background: white; */
     color: black;
 }
 .fa-instagram {
-    background: white;
+    /* background: white; */
     color: black;
 }
 
