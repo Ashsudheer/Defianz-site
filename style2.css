@@ -27,6 +27,9 @@ body {
     color: rgb(255, 255, 255) !important;
     transition: color 200ms ease;
 }
+.fixed-top.scrolled .dropdown-menu a{
+    color: rgb(5, 5, 5) !important;
+}
 nav img {
     height: 26px;
     width: auto;
