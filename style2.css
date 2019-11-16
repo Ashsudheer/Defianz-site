@@ -178,7 +178,7 @@ img.sponsorImg {
 footer {
     background: -webkit-linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
     background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
-    color: gray;
+    color:  rgb(167, 159, 159);
     font-size: 13px;
     text-align: center;
     height: 270px;
@@ -194,7 +194,7 @@ footer ul.footer {
     padding: 0 0 0 0;
 }
 footer div {
-    color: rgb(77, 73, 73);
+    color:   rgb(167, 159, 159);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
