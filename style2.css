@@ -356,3 +356,19 @@ Blockquote Footer
 #Mission{
     color:rgb(255, 255, 255); 
 }
+
+/* ---------------------
+    Card
+------------------------*/
+
+.card{
+    width:20rem;
+    margin-top:8%;
+    margin-left:8%;
+}
+.card:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(255, 255, 255, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(255, 255, 255, 0.75);
+}
+

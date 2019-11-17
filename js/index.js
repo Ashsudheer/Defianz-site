@@ -11,4 +11,17 @@ $(function () {
             'display': 'none'
         });
     });
+    $('.card-type').hover(
+        function () {
+            $(this).animate({
+                marginTop: "-=4%",
+            }, 200);
+        },
+        function(){
+            $(this).animate({
+                marginTop: "+=4%",
+            }, 200);
+        }
+    );
+
 });
