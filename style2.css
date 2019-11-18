@@ -365,10 +365,22 @@ Blockquote Footer
     width:25rem;
     margin-top:8%;
     margin-left:8%;
+    background:none;
 }
 .card:hover{
     -webkit-box-shadow: -1px 9px 40px -12px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: -1px 9px 40px -12px rgba(255, 255, 255, 0.75);
     box-shadow: -1px 9px 40px -12px rgba(255, 255, 255, 0.75);
 }
-
+.card-type .card-img-top{
+    object-fit:cover;
+    height:15rem;
+    width:100%;
+}
+.team-cards{
+    width:30rem;
+    background: none !important;
+    padding:1rem;
+    border-style: solid !important;
+    border-color: rgba(136, 136, 136, 0.6) !important;
+}
