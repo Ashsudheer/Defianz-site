@@ -36,7 +36,11 @@ nav img {
 }
 nav ul a {
     color: black !important;
-    font-size: 18px;
+    font-size: 18px;}
+
+    a.white {
+        color: white !important;
+        font-size: 18px;
 }
 nav ul a:hover {
     background: slategray !important;
