@@ -4,9 +4,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(26, 52, 77);
     background: -webkit-linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
-     background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
-    /*background: linear-gradient(to right,#ffd89b,#19547b);*/
-   min-height: 100vh;
+    background: linear-gradient(to right, rgb(26, 52, 77), rgb(0, 0, 0));
+    min-height: 100vh;
 }
 
 /* --------------
@@ -46,8 +45,6 @@ nav ul a {
 nav ul a:hover {
     background: slategray !important;
     color: rgba(0, 0, 0, .5) !important;
-    border:2px ;
-    border-radius: 5px;
 }
 nav li {
     display: inline-block;
@@ -135,15 +132,12 @@ nav button a:hover{
     top: 50%;
     background: rgba(0, 0, 0, 0.3);
     transform: translate(0%, -50%);
-    font-family: candara;
-    
 }
 .carousel-caption h1{
     font-size: 6vw;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    opacity: 60%;
 }
 
 /*----------
@@ -364,12 +358,8 @@ Blockquote Footer
 }
 
 #Mission{
-    color:rgb(125, 128, 127); 
-     font-family: candara;
-     /*background-color: black;*/
-
+    color:rgb(255, 255, 255); 
 }
-
 
 /* ---------------------
     Card
@@ -392,7 +382,7 @@ Blockquote Footer
     width:100%;
 }
 .team-cards{
-    background: black !important;
+    background: none !important;
     padding:1rem;
     border-style: solid !important;
     border-color: rgba(136, 136, 136, 0.6) !important;
